@@ -646,11 +646,13 @@ export default function createAnimatedComponent(
           if (sharedTransitionTag) {
             const sharedElementTransition =
               this.props.sharedTransitionStyle ?? new SharedTransition();
-            sharedElementTransition.registerTransition(
-              tag,
-              sharedTransitionTag
-            );
-            this._sharedElementTransition = sharedElementTransition;
+            if (!sharedElementTransition.getReduceMotion()) {
+              sharedElementTransition.registerTransition(
+                tag,
+                sharedTransitionTag
+              );
+              this._sharedElementTransition = sharedElementTransition;
+            }
           }
         }
 
