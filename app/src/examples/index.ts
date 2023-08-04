@@ -95,6 +95,7 @@ import PendulumExample from './PendulumExample';
 import DuplicateTagsExample from './SharedElementTransitions/DuplicateTags';
 import BabelVersionCheckExample from './BabelVersionCheckExample';
 import ReducedMotionLayoutExample from './LayoutAnimations/ReducedMotionLayoutExample';
+import ReducedMotionSharedExample from './SharedElementTransitions/ReducedMotionSharedExample';
 
 interface Example {
   icon?: string;
@@ -555,5 +556,9 @@ export const EXAMPLES: Record<string, Example> = {
   DuplicateTagsExample: {
     title: '[SET] Duplicate Tags',
     screen: DuplicateTagsExample,
+  },
+  ReducedMotionSharedExample: {
+    title: '[SET] Reduced Motion',
+    screen: ReducedMotionSharedExample,
   },
 } as const;

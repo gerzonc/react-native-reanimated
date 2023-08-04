@@ -6,7 +6,6 @@ import type {
   AnimationObject,
   ReduceMotion,
   Timestamp,
-  ReducedMotionConfig,
 } from '../commonTypes';
 
 export function withSequence<T extends AnimatableValue>(
