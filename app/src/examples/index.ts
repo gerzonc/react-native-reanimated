@@ -94,6 +94,7 @@ import MatrixTransform from './MatrixTransform';
 import PendulumExample from './PendulumExample';
 import DuplicateTagsExample from './SharedElementTransitions/DuplicateTags';
 import BabelVersionCheckExample from './BabelVersionCheckExample';
+import ReducedMotionLayoutExample from './LayoutAnimations/ReducedMotionLayoutExample';
 
 interface Example {
   icon?: string;
@@ -503,6 +504,10 @@ export const EXAMPLES: Record<string, Example> = {
   Carousel: {
     title: '[LA] Carousel',
     screen: Carousel,
+  },
+  ReducedMotionLayoutExample: {
+    title: '[LA] Reduced Motion',
+    screen: ReducedMotionLayoutExample,
   },
 
   // Shared Element Transitions
